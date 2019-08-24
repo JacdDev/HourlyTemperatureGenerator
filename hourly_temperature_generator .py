@@ -20,13 +20,6 @@ relevant_temperatures = [15, 30, 12, 37]
 # array of relevant hours of relevant_temperatures
 relevant_hours = [6, 18, 30, 40]
 
-# create a duple's array with hours and temperatures
-relevant_hours_and_temperatures = list(zip(relevant_hours, relevant_temperatures))
-
-# get first and last relevant data
-first_relevant_hour = relevant_hours_and_temperatures[0][0]
-last_relevant_hour = relevant_hours_and_temperatures[len(relevant_hours_and_temperatures)-1][0]
-
 
 ###################
 #    Functions    #
@@ -54,6 +47,13 @@ def sort_by_first(val):
 ########################
 #    Main Algorithm    #
 ########################
+
+# create a duple's array with hours and temperatures
+relevant_hours_and_temperatures = list(zip(relevant_hours, relevant_temperatures))
+
+# get first and last relevant data
+first_relevant_hour = relevant_hours_and_temperatures[0][0]
+last_relevant_hour = relevant_hours_and_temperatures[len(relevant_hours_and_temperatures)-1][0]
 
 # sorts the array ascending by hour
 relevant_hours_and_temperatures.sort(key=sort_by_first)
