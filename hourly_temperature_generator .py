@@ -5,9 +5,6 @@ from matplotlib import pyplot
 #      PARAMS     #
 ###################
 
-# this array store the calculated temperatures (final result)
-calculated_temperatures = []
-
 # first time predicted
 init_time = 0
 
@@ -47,6 +44,10 @@ def sort_by_first(val):
 ########################
 #    Main Algorithm    #
 ########################
+
+
+# this array store the calculated temperatures (final result)
+calculated_temperatures = []
 
 # create a duple's array with hours and temperatures
 relevant_hours_and_temperatures = list(zip(relevant_hours, relevant_temperatures))
